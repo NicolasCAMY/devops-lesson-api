@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 app.get('/', (req, res) => {
   res.json({
     service: 'Payment API',
-    version: '1.0.0',
+    version: '1.0.1',
     environment: process.env.NODE_ENV || 'development'
   });
 });
