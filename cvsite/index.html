@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV — Nicolas Camy</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div>
+        <h1 id="title">CV — Nicolas Camy</h1>
+        <p class="sub">PDF intégré + easter eggs (JS)</p>
+      </div>
+
+      <div class="actions">
+        <a class="btn" href="./CV_CAMY_Nicolas.pdf" download>Télécharger le PDF</a>
+        <button class="btn ghost" id="themeBtn">Thème</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hint">
+      Easter eggs :
+      <span>1) Clique 5 fois sur le titre</span> ·
+      <span>2) Tape “cv” au clavier</span>
+    </div>
+
+    <div class="viewer">
+      <iframe class="pdf" src="./CV_CAMY_Nicolas.pdf" title="CV PDF"></iframe>
+    </div>
+  </main>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
